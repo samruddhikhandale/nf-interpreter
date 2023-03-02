@@ -1,0 +1,62 @@
+// For format details, see https://aka.ms/devcontainer.json.
+{
+	"name": "nanoFramework",
+	"build": {
+		"context": ".",
+		"dockerfile": "../Dockerfile.TI"
+	},
+
+	// If you prefer, you can use the source files and adjust them they are located, with the same names in ./sources. This will alow you to customize them and add anything you may need on top.
+	"mounts": [
+		{
+			"source": "/var/run/docker.sock",
+			"target": "/var/run/docker.sock",
+			"type": "bind"
+		},
+		// Mount .azure folder for seamless az cli auth
+		{
+			"source": "${env:HOME}${env:USERPROFILE}/.azure",
+			"target": "/home/vscode/.azure",
+			"type": "bind"
+		},
+		// Keep command history 
+		{
+			"source": "nano-bashhistory",
+			"target": "/home/vscode/commandhistory",
+			"type": "volume"
+		}
+	],
+
+	// Configure tool-specific properties.
+	"customizations": {
+		// Set *default* container specific settings.json values on container create.
+		"settings": {
+			"cmake.preferredGenerators": [
+				"Ninja"
+			],
+			"cmake.generator": "Ninja",
+			"cmake.autoRestartBuild": true,
+			"cmake.configureSettings": {
+				"CMAKE_MAKE_PROGRAM": "/usr/bin/ninja"
+			},
+			"cmake.configureOnOpen": false
+		},
+		// Add the IDs of extensions you want installed when the container is created.
+		"extensions": [
+			"ms-vsliveshare.vsliveshare-pack",
+			"streetsidesoftware.code-spell-checker",
+			"twxs.cmake",
+			"ms-vscode.cmake-tools",
+			"xaver.clang-format"
+		]
+	}
+
+	// You can pull all the repos with the latest changes, this is only valid if you are using the ./sources/Dockerfile.all containers
+	// "postAttachCommand": "/usr/local/git-pull-repos.sh"
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "terraform --version",
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
+}

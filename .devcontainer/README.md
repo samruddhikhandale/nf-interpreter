@@ -10,15 +10,25 @@ The available pre build images are:
 * ghcr.io/nanoframework/dev-container-esp32: contains all elements to build a firmware image for any of the ESP32 targets
 * ghcr.io/nanoframework/dev-container-azure-rtos: contains all elements to build a firmware image for any of the Azure RTOS targets
 
-To choose the dev container you want to use, adjust `devcontainer.json` and change the `"dockerFile": "Dockerfile"` elements for the image you'd liked to use:
+## Getting started with GitHub Codespaces
 
-* `Dockerfile.All` to use the pre build container with all the elements to build a firmware image for any of the targets
-* `Dockerfile.AzureRTOS` to use the pre build container with all the elements to build Azure RTOS targets
-* `Dockerfile.ChibiOS` to use the pre build container with all the elements to build ChibiOS targets
-* `Dockerfile.ESP32` to use the pre build container with all the elements to build ESP32 targets
-* `Dockerfile.TI` to use the pre build container with all the elements to build TI SimpleLink targets
-* `./sources/Dockerfile.All` to build the container image from the source with all the elements to build all the images
-* `./sources/Dockerfile.AzureRTOS` to build the container image from the source with all the elements to build Azure RTOS based devices
-* `./sources/Dockerfile.ChibiOS` to build the container image from the source with all the elements to build ChibiOS based devices
-* `./sources/Dockerfile.ESP32` to build the container image from the source with all the elements to build ESP32 based devices
-* `./sources/Dockerfile.TI` to build the container image from the source with all the elements to build TI SimpleLink based devices
+To get started, create a codespace for this repository by clicking this 👇 
+
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=74834622)
+
+To choose the dev container, you can simply pick one from the `Dev container configuration ` list:
+
+* (Default) `.devcontainer/devcontainer.json` to use the pre build container with all the elements to build a firmware image for any of the targets
+* `.devcontainer/AzureRTOS/devcontainer.json` to use the pre build container with all the elements to build Azure RTOS targets
+* `.devcontainer/ChibiOS/devcontainer.json` to use the pre build container with all the elements to build ChibiOS targets
+* `.devcontainer/ESP32/devcontainer.json` to use the pre build container with all the elements to build ESP32 targets
+* `.devcontainer/TI/devcontainer.json` to use the pre build container with all the elements to build TI SimpleLink targets
+* `.devcontainer/sources/devcontainer.json` to build the container image from the source with all the elements to build all the images
+* `.devcontainer/sources/AzureRTOS/devcontainer.json` to build the container image from the source with all the elements to build Azure RTOS based devices
+* `.devcontainer/sources/ChibiOS/devcontainer.json` to build the container image from the source with all the elements to build ChibiOS based devices
+* `.devcontainer/sources/ESP32/devcontainer.json` to build the container image from the source with all the elements to build ESP32 based devices
+* `.devcontainer/sources/TI/devcontainer.json` to build the container image from the source with all the elements to build TI SimpleLink based devices
+
+A codespace will open in a web-based version of Visual Studio Code. The [dev container](.devcontainer/devcontainer.json) is fully configured with software needed for this project. Feel free to take a look at [GitHub Codespaces Support](https://support.github.com/features/codespaces) page for help.
+
+**Note**: Dev containers is an open spec which is supported by [GitHub Codespaces](https://github.com/codespaces) and [other tools](https://containers.dev/supporting).
