@@ -151,6 +151,16 @@ The above .NET nanoFramework interpreter builds include support for the class li
   * [CMake files for the build system](CMake)
 </details>
 
+## Getting started with GitHub Codespaces
+
+To get started, create a codespace for this repository by clicking this 👇 
+
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=74834622)
+
+A codespace will open in a web-based version of Visual Studio Code. The [dev container](.devcontainer/devcontainer.json) is fully configured with software needed for this project. Feel free to take a look at [GitHub Codespaces Support](https://support.github.com/features/codespaces) page for help.
+
+**Note**: Dev containers is an open spec which is supported by [GitHub Codespaces](https://github.com/codespaces) and [other tools](https://containers.dev/supporting).
+
 ## Feedback and documentation
 
 For documentation, providing feedback, issues and finding out how to contribute please refer to the [Home repo](https://github.com/nanoframework/Home).
