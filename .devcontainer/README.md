@@ -24,10 +24,10 @@ To choose the dev container, you can simply pick one from the `Dev container con
 * `.devcontainer/ESP32/devcontainer.json` to use the pre build container with all the elements to build ESP32 targets
 * `.devcontainer/TI/devcontainer.json` to use the pre build container with all the elements to build TI SimpleLink targets
 * `.devcontainer/sources/devcontainer.json` to build the container image from the source with all the elements to build all the images
-* `.devcontainer/sources/AzureRTOS/devcontainer.json` to build the container image from the source with all the elements to build Azure RTOS based devices
-* `.devcontainer/sources/ChibiOS/devcontainer.json` to build the container image from the source with all the elements to build ChibiOS based devices
-* `.devcontainer/sources/ESP32/devcontainer.json` to build the container image from the source with all the elements to build ESP32 based devices
-* `.devcontainer/sources/TI/devcontainer.json` to build the container image from the source with all the elements to build TI SimpleLink based devices
+* `.devcontainer/sources-AzureRTOS/devcontainer.json` to build the container image from the source with all the elements to build Azure RTOS based devices
+* `.devcontainer/sources-ChibiOS/devcontainer.json` to build the container image from the source with all the elements to build ChibiOS based devices
+* `.devcontainer/sources-ESP32/devcontainer.json` to build the container image from the source with all the elements to build ESP32 based devices
+* `.devcontainer/sources-TI/devcontainer.json` to build the container image from the source with all the elements to build TI SimpleLink based devices
 
 A codespace will open in a web-based version of Visual Studio Code. The [dev container](.devcontainer/devcontainer.json) is fully configured with software needed for this project. Feel free to take a look at [GitHub Codespaces Support](https://support.github.com/features/codespaces) page for help.
 
